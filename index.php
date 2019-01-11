@@ -435,7 +435,6 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
 								</ul>
 							</form>
                             <?php
-if (isset($_post['submit'])){
     define('DB_HOST', 'localhost');
   define('DB_USER', 'focal');
   define('DB_PASSWORD', 'focalpoint');
@@ -448,7 +447,7 @@ if (isset($_post['submit'])){
     // Grab the profile data from the POST
     $name = mysqli_real_escape_string($dbc, trim($_POST['name']));
     $tel = mysqli_real_escape_string($dbc, trim($_POST['tel']));
-    $emial = mysqli_real_escape_string($dbc, trim($_POST['email']));
+    $email = mysqli_real_escape_string($dbc, trim($_POST['email']));
     $message = mysqli_real_escape_string($dbc, trim($_POST['message']));
 
     if (!empty($name) && !empty($tel) && !empty($email) && !empty($message)) {
@@ -458,7 +457,6 @@ if (isset($_post['submit'])){
                             
         <b>  <p style="color: blue">Thank you for submiting, we will get back to you swiftly</p></b><?php
     }
-  }
 
   mysqli_close($dbc);
 }
