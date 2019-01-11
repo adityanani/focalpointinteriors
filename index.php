@@ -413,8 +413,8 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
 							<h2>Get in touch</h2>
 						</header>
                          
-						<div class="content">
-					        <form method="post" action="index.php">
+						<div class="content" id="submitted">
+					        <form method="post" action="index.php#submitted">
 								<div class="fields">
 									<div class="field half">
 										<input type="text" name="name" id="name" placeholder="Name" required/>
