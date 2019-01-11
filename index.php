@@ -431,7 +431,7 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
 									</div>
 								</div>
 								<ul class="actions">
-									<li><input type="submit" value="Send Message" class="button primary" /></li>
+									<li><input type="submit" name="submit" value="Send Message" class="button primary" /></li>
 								</ul>
 							</form>
                             <?php
@@ -463,8 +463,7 @@ if (isset($_post['submit'])){
   mysqli_close($dbc);
 }
 ?>
-                            <b>  <p style="color: blue">Thank you for submiting, we will get back to you swiftly</p></b>
-						</div>
+                            </div>
                        
 						<footer>
 							<ul class="items">
