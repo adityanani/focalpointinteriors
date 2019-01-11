@@ -412,17 +412,18 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
 						<header>
 							<h2>Get in touch</h2>
 						</header>
+                         
 						<div class="content">
-							<form>
+					        <form method="post" action="index.php">
 								<div class="fields">
 									<div class="field half">
-										<input type="text" name="name" id="name" placeholder="Name" />
+										<input type="text" name="name" id="name" placeholder="Name" required/>
 									</div>
 									<div class="field half">
-										<input type="tel" name="tel" id="tel" placeholder="Mobile number" />
+										<input type="tel" name="tel" id="tel" placeholder="Mobile number" required/>
 									</div>
                                     <div class="field">
-										<input type="email" name="email" id="email" placeholder="Email" />
+										<input type="email" name="email" id="email" placeholder="Email" required/>
 									</div>
                                    
 									<div class="field">
@@ -433,7 +434,38 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
 									<li><input type="submit" value="Send Message" class="button primary" /></li>
 								</ul>
 							</form>
+                            <?php
+if (isset($_post['submit'])){
+    define('DB_HOST', 'localhost');
+  define('DB_USER', 'focal');
+  define('DB_PASSWORD', 'focalpoint');
+  define('DB_NAME', 'focal');
+
+  // Connect to the database
+  $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+
+  if (isset($_POST['submit'])) {
+    // Grab the profile data from the POST
+    $name = mysqli_real_escape_string($dbc, trim($_POST['name']));
+    $tel = mysqli_real_escape_string($dbc, trim($_POST['tel']));
+    $emial = mysqli_real_escape_string($dbc, trim($_POST['email']));
+    $message = mysqli_real_escape_string($dbc, trim($_POST['message']));
+
+    if (!empty($name) && !empty($tel) && !empty($email) && !empty($message)) {
+      $query = "INSERT INTO contact (name, tel, email, message) VALUES ('$name', '$tel', '$email', '$message')";
+        mysqli_query($dbc, $query);
+?>
+                            
+        <b>  <p style="color: blue">Thank you for submiting, we will get back to you swiftly</p></b><?php
+    }
+  }
+
+  mysqli_close($dbc);
+}
+?>
+                            <b>  <p style="color: blue">Thank you for submiting, we will get back to you swiftly</p></b>
 						</div>
+                       
 						<footer>
 							<ul class="items">
 								<li>
