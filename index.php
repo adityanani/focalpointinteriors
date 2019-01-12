@@ -408,12 +408,12 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
 				-->
 
 				<!-- Section -->
-					<section>
+					<section id="submitted">
 						<header>
 							<h2>Get in touch</h2>
 						</header>
                          
-						<div class="content" id="submitted">
+						<div class="content">
 					        <form method="post" action="index.php#submitted">
 								<div class="fields">
 									<div class="field half">
