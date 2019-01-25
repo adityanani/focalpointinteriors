@@ -477,7 +477,7 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
 								<li>
 									<h3>Address</h3>
 									<span>H.NO
-4-202/25/A, NIZAMPT ROAD, VERTEX LAKE VIEW VILLA, TIRUMALAGIRI, KUKATPALLY, HYDERABAD–72</span>
+4-202/25/A, NIZAMPET ROAD, VERTEX LAKE VIEW VILLA, TIRUMALAGIRI, KUKATPALLY, HYDERABAD–72</span>
 								</li>
 								<li>
 									<h3>Elsewhere</h3>
