@@ -136,7 +136,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 									</form>
 									<?php
 									  define('DB_HOST', 'localhost');
-									  define('DB_USER', 'focal');
+									  define('DB_USER', 'focalpoint');
 									  define('DB_PASSWORD', '12345678');
 									  define('DB_NAME', 'focal');
 
