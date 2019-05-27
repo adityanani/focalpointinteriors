@@ -136,8 +136,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 									</form>
 									<?php
 									  define('DB_HOST', 'localhost');
-									  define('DB_USER', 'root');
-									  define('DB_PASSWORD', '');
+									  define('DB_USER', 'focal');
+									  define('DB_PASSWORD', '12345678');
 									  define('DB_NAME', 'focal');
 
 									  // Connect to the database
