@@ -117,7 +117,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 						<div class="col-md-7 col-md-push-1">
 							<div class="row">
 								<div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box" data-animate-effect="fadeInLeft">
-									<form method="post" action="http://www.wearefocalpoint.com/contact/#submitted">
+									<form method="post" action="http://www.wearefocalpoint.com/contact/index.html#submitted">
 										<div class="form-group">
 											<input type="text" id="name" name="name" class="form-control" placeholder="Name" required>
 										</div>
