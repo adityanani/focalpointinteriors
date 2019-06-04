@@ -56,11 +56,11 @@
 			<h1 id="colorlib-logo"><a href="../index.html"><img src="../images/logo.png" alt="Focal point interiors logo" style="width: 100%"></a></h1>
 			<nav id="colorlib-main-menu" role="navigation">
 				<ul>
-					<li><a href="../index.html">Home</a></li>
-					<li><a href="../project/index.html">Project</a></li>
-					<li><a href="../about/index.html">About</a></li>
-					<li><a href="../services/index.html">Services</a></li>
-					<li class="colorlib-active"><a href="../contact/index.php">Contact</a></li>
+					<li><a href="http://www.wearefocalpoint.com">Home</a></li>
+					<li><a href="http://www.wearefocalpoint.com/project">Project</a></li>
+					<li><a href="http://www.wearefocalpoint.com/about">About</a></li>
+					<li><a href="http://www.wearefocalpoint.com/services">Services</a></li>
+					<li class="colorlib-active"><a href="http://www.wearefocalpoint.com/contact">Contact</a></li>
 				</ul>
 			</nav>
 
@@ -117,7 +117,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 						<div class="col-md-7 col-md-push-1">
 							<div class="row">
 								<div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box" data-animate-effect="fadeInLeft">
-									<form method="post" action="../contact/index.php#submitted">
+									<form method="post" action="http://www.wearefocalpoint.com/contact/#submitted">
 										<div class="form-group">
 											<input type="text" id="name" name="name" class="form-control" placeholder="Name" required>
 										</div>
