@@ -117,7 +117,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 						<div class="col-md-7 col-md-push-1">
 							<div class="row">
 								<div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box" data-animate-effect="fadeInLeft">
-									<form method="post" action="http://www.wearefocalpoint.com/contact/index.php#submitted">
+									<form method="post" action="http://www.wearefocalpoint.com/contact/#submitted">
 										<div class="form-group">
 											<input type="text" id="name" name="name" class="form-control" placeholder="Name" required>
 										</div>
@@ -153,8 +153,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 									    if (!empty($name) && !empty($tel) && !empty($email) && !empty($message)) {
 									      $query = "INSERT INTO focal (name, tel, email, message) VALUES ('$name', '$tel', '$email', '$message')";
 									        mysqli_query($dbc, $query);
-									?>
-									                  INSERT INTO focal (name, tel, email, message) VALUES ('aditya', '1234567', 'a@b.com', 'test')          
+									?>         
 									        <b>  <p style="color: gold">Thank you for submiting, we will get back to you swiftly</p></b><?php
 									    }
 
